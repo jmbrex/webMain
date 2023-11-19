@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css"> <!--Mobile First (Página Principal)-->
+    <link rel="stylesheet" href="estilos/media-principal.css"> <!--Resto dos dispositivos (Página Principal e Banner)-->
+    <link rel="stylesheet" href="estilos/media-catalogo.css"> <!--Media Query da Pagína Catálogo-->
+    <link rel="stylesheet" href="estilos/catalogo.css"> <!--Pagina dos Produtos-->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="script.js"></script>
+    <title>Main Gaming Network</title>
+</head>
+<body onresize="sizeChange()">
+    <header>
+        <img src="imagens/logo.png" alt="Logotipo">
+        <span id="burger" class="material-symbols-outlined" onclick="menu()">
+            menu
+            </span>
+    </header>
+    <menu id="itens">
+        <ul>
+            <li><a href="Menuindex" >Home</a></li>
+            <li><a href="login" >Cadastro</a></li>
+            <li><a href="contato"  rel="next">Contato</a></li>
+            <li><a href="catalogo"  rel="next">Catalogo</a></li>
+        </ul>
+    </menu>
+
+    <h2 class="categoria">Selecione uma categoria</h2>
+
+    <section class="generos">
+        <ul class="generos__lista">
+            <li class="lista__itens">
+                <h3>FPS</h3>
+                <a href="#"><img src="imagens/FPS.png" class="lista__imagens" alt=""></a>
+            </li>
+            <li class="lista__itens">
+                <h3>RPG</h3>
+                <a href="#"><img src="imagens/RPG.png" class="lista__imagens" alt=""></a>
+            </li>
+            <li class="lista__itens">
+                <h3>Plataforma</h3>
+                <a href="#"><img src="imagens/Plataforma.png" class="lista__imagens" alt=""></a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados a <strong>Main Gaming Network</strong></p>
+    </footer>
+</body>
+</html>

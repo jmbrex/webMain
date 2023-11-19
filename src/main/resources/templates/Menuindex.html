@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html  xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css"> <!--Mobile First (Página Principal)-->
+    <link rel="stylesheet" href="estilos/media-principal.css"> <!--Resto dos dispositivos (Página Principal e Banner)-->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
+    <title>Main Gaming Network</title>
+</head>
+<body onresize="sizeChange()">
+    <!--Cabeçalho do site-->
+    <header>
+        <img class="logo" src="imagens/logo.png" alt="Logotipo">
+        <span id="burger" class="material-symbols-outlined" onclick="menu()">
+            menu
+            </span>
+    </header>
+    <!--div usada para inserir um background image, para melhor responsividade-->
+    <div class="banner">
+    <menu id="itens">
+        <ul>
+            <li><a href="Menuindex" >Home</a></li>
+            <li><a href="login" >Cadastro</a></li>
+            <li><a href="contato"  rel="next">Contato</a></li>
+            <li><a href="catalogo"  rel="next">Catalogo</a></li>
+        </ul>
+    </menu>
+    </div>
+
+    <main>
+        <section>
+            <h1 class="titulo-site">Sobre a loja Main Gaming Network</h1>
+            <p class="local">
+                <img class="main-gaming" src="imagens/logotipotexto.png" alt="Logotipo"> Localizada no coração da cidade a <strong>Main Gaming Network</strong> traz para o mercado os melhores preços da região no mercado de jogos. Fundada em 2019, já somos destaque no mercado e conquistamos novos clientes a cada dia!
+            </p>
+
+        </section>
+
+        <section>
+            <h1 class="titulo-padrao">Nosso Estabelecimento</h1>
+            <p class="cora">Estamos localizados no coração da cidade!</p>
+            <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8839956158517!2d-46.5583366!3d-23.6443251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4328ea92757b%3A0xccca50dd4902033b!2sR.%20Santo%20Andr%C3%A9%2C%20680%20-%20Boa%20Vista%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009572-000!5e0!3m2!1spt-BR!2sbr!4v1693608157558!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section>
+            <h1 class="titulo-padrao">Benefícios</h1>
+            <ul class="lista-beneficios">
+                <li>Proporcionar ótimos momentos</li>
+                <li>Dividir com os amigos e com a família</li>
+                <li>Produtos de qualidade</li>
+                <li>Preços Acessíveis</li>
+            </ul>
+           
+        </section>
+                            
+        <iframe class="frame" width="400" height="300" src="https://www.youtube.com/embed/yJQmo6Bz57w?si=tL_uA1Y-URNBIbmL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos reservados a <strong>Main Gaming Network</strong></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+body{
+    height:100vh;
+    background-color: #59687D;
+}
+
+.categoria{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top:2rem;
+    color: #8FA8C9; 
+}
+
+.generos__lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.lista__itens{
+    text-align: center;
+    margin: 3rem 0rem 3rem 0rem;
+    border: 2px solid #1E314A;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    background-color: #232931;
+    color: #8FA8C9; 
+}
+.lista__itens:hover{
+    transform:scale(1.090);
+    transition:.5s;
+}
+.lista__itens:active{
+    color:black;
+    transition: none;
+}
+.lista__itens h3{
+    margin-bottom: 0.5rem;
+}
+
+.lista__imagens{
+    border-radius: 0.6rem;
+}

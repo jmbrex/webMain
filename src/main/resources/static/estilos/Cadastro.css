@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+body{
+     background-color: #59687D;
+     font-family: 'Roboto', sans-serif;
+     
+}
+.formularioCadastro{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px #ffffff;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 25%;
+    margin-top: 2%;
+    padding: 1%;
+}
+.label{
+    color:  #ffffff;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.CadastroInput{
+    min-width: 20%;
+    min-height: 25px;
+}
