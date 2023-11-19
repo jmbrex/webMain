@@ -12,12 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-//import pro.mongocrud.ConectarMongo;
 
-/**
- *
- * @author João Marcelo
- */
 @Controller
 public class WebControler {
     
@@ -54,7 +49,7 @@ public class WebControler {
             Doc doc = new Doc();
             DbMongoDB mongo = new DbMongoDB();
             DbSQL SQL = new DbSQL();
-            //ConectarMongo mongo2 = new ConectarMongo();
+            
             
             User U2 = SQL.sqlUserSelectNickName(InputNick);
             User u1 = new User(0,InputName,InputNick, InputEmail, InputSenha);
