@@ -17,21 +17,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class WebControler {
     
     @RequestMapping("/Menuindex")
-    
     public String Menuindex(Model modelo){
         return "Menuindex";
                 
     }
     
     @RequestMapping("/cadastro")
-    
     public String login(Model modelo){
         return "cadastro";
                 
     }
     
     @RequestMapping("/catalogo")
-    
     public String catalogo(Model modelo){
         return "catalogo";
     }
@@ -51,15 +48,15 @@ public class WebControler {
             DbSQL SQL = new DbSQL();
             
             User U2 = SQL.sqlUserSelectNickName(InputNick);
-            User u1 = new User(0,InputName,InputNick, InputEmail, InputSenha);
+            User U1 = new User(0,InputName,InputNick, InputEmail, InputSenha);
             
             if(U2.getNickName().equals(InputNick)){
-                 modelo.addAttribute("mensagem", "NickName ja existente: "+ u1.getNickName());
+                 modelo.addAttribute("mensagem", "Usuario ja existente: "+ U1.getNickName());
                  return "login";
             }else{
-                mongo.MongoInsertDB("Main", "UserMain", doc.UserToDoc(u1));
-                SQL.sqlDbUserInsert(u1);
-                modelo.addAttribute("mensagem", "Cadastro Realizado: "+ u1.getNickName());
+                mongo.MongoInsertDB("Main", "UserMain", doc.UserToDoc(U1));
+                SQL.sqlDbUserInsert(U1);
+                modelo.addAttribute("mensagem", "Cadastro Realizado: "+ U1.getNickName());
             }
             
         return "login";
