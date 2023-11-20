@@ -23,10 +23,10 @@ public class WebControler {
                 
     }
     
-    @RequestMapping("/login")
+    @RequestMapping("/cadastro")
     
     public String login(Model modelo){
-        return "login";
+        return "cadastro";
                 
     }
     
