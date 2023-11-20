@@ -4,7 +4,7 @@
 .titulo__contato{
     margin-top: 1rem;
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #8FA8C9; 
 }
 
@@ -12,6 +12,7 @@
     text-align: center;
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 body{
@@ -19,20 +20,40 @@ body{
     background-color: #59687D;
 }
 
+.Estrutura{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .formulario{
     display: flex;
     align-items: center;
     flex-direction: column;
     padding:15px;
+    border: 2px solid #ffffff;
 }
 
 .formulario__textos{
     padding:5px;
+    margin-bottom: 2%;
 }
 
 .formulario__botao{
     text-align: center;
-    padding:10px;
-    margin: 1rem;
-    margin-left: 38.8rem;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.formulario__botao:hover{
+    transition: 300ms;
+    scale: 1.2;
+    color: #ffffff;
+    background-color:#8FA8C9; 
+    border-color: #ffffff;
+}
+
+.labelText{
+    color: #ffffff;
+    margin-bottom: 1%;
 }

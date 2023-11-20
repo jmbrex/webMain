@@ -27,3 +27,17 @@ body{
     min-width: 20%;
     min-height: 25px;
 }
+
+#BTSalvar{
+    text-align: center;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+#BTSalvar:hover{
+    transition: 300ms;
+    scale: 1.2;
+    color: #ffffff;
+    background-color:#8FA8C9; 
+    border-color: #ffffff;
+}
