@@ -50,7 +50,6 @@ public class WebControler {
             DbMongoDB mongo = new DbMongoDB();
             DbSQL SQL = new DbSQL();
             
-            
             User U2 = SQL.sqlUserSelectNickName(InputNick);
             User u1 = new User(0,InputName,InputNick, InputEmail, InputSenha);
             
@@ -58,7 +57,6 @@ public class WebControler {
                  modelo.addAttribute("mensagem", "NickName ja existente: "+ u1.getNickName());
                  return "login";
             }else{
-                System.out.println("a");
                 mongo.MongoInsertDB("Main", "UserMain", doc.UserToDoc(u1));
                 SQL.sqlDbUserInsert(u1);
                 modelo.addAttribute("mensagem", "Cadastro Realizado: "+ u1.getNickName());
