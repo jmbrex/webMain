@@ -8,6 +8,7 @@ body{
 .formularioCadastro{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10%;
     border: solid 2px #ffffff;
     
     display: flex;
@@ -16,6 +17,7 @@ body{
     max-width: 25%;
     margin-top: 2%;
     padding: 1%;
+    
 }
 .label{
     color:  #ffffff;
