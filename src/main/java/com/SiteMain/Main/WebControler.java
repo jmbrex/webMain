@@ -31,6 +31,11 @@ public class WebControler {
         return "catalogo";
     }
     
+    @RequestMapping("/catalogoFPS")
+    public String catalogoFPS(Model modelo){
+        return "catalogoFPS";
+    }
+    
     @RequestMapping("/contato")
     public String contato(Model modelo){
         System.out.println("Chamando o metodo SayHello");
