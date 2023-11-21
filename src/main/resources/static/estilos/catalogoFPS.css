@@ -7,7 +7,7 @@ body{
 }
 
 .generos{
-    margin-bottom: 10%;
+    margin-bottom: 13%;
 }
 
 .categoria{
@@ -19,8 +19,9 @@ body{
 
 .generos__lista{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around
     
 }
 
