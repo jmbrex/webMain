@@ -6,6 +6,8 @@ body{
     background-color: #59687D;
 }
 
+
+
 .categoria{
     text-align: center;
     font-size: 1.8rem;
@@ -43,4 +45,7 @@ body{
 
 .lista__imagens{
     border-radius: 0.6rem;
+    max-height: 250px;
+    max-width: 200px;
 }
+
