@@ -71,11 +71,16 @@ public class WebControler {
             if(U2.getNickName().equals(InputNick)){
                  modelo.addAttribute("mensagem", "Usuario: "+ U1.getNickName()+ " ja existente: ");
                  return "cadastro";
-            }else{
+            }else if(U1.getSenha().equals(InputSenhaConfirm)){
+                
                 mongo.MongoInsertDB("Main", "UserMain", doc.UserToDoc(U1));
                 SQL.sqlDbUserInsert(U1);
                 modelo.addAttribute("mensagem", "Cadastro Realizado: "+ U1.getNickName());
                 return "cadastro";
+            }else{
+                modelo.addAttribute("mensagem", "Senhas Divergentes");
+                 return "cadastro";
+                
             }
         
     }
