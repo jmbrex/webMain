@@ -5,12 +5,27 @@ body{
      font-family: 'Roboto', sans-serif;
      
 }
+
+.titulo__cadastro{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #8FA8C9; 
+}
+
+.texto__info{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
 .formularioCadastro{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
     border: solid 2px #ffffff;
-    
+    border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,6 +47,8 @@ body{
 
 #BTSalvar{
     text-align: center;
+    width: 25%;
+    height: 10%;
     padding: 10px;
     margin-top: 2%;
 }
