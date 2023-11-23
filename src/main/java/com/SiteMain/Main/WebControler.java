@@ -70,12 +70,12 @@ public class WebControler {
             //Verificando a existencia de um usuario com o mesmo Nickname
             if(U2.getNickName().equals(InputNick)){
                  modelo.addAttribute("mensagem", "Usuario: "+ U1.getNickName()+ " ja existente: ");
-                 return "login";
+                 return "cadastro";
             }else{
                 mongo.MongoInsertDB("Main", "UserMain", doc.UserToDoc(U1));
                 SQL.sqlDbUserInsert(U1);
                 modelo.addAttribute("mensagem", "Cadastro Realizado: "+ U1.getNickName());
-                return "login";
+                return "cadastro";
             }
         
     }
