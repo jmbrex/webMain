@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css"> <!--Mobile First (Página Principal)-->
     
-    <link rel="stylesheet" href="estilos/Cadastro.css">
+    <link rel="stylesheet" href="estilos/Login.css">
     <link rel="stylesheet" href="estilos/media-principal.css"> <!--Resto dos dispositivos (Página Principal e Banner)-->
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -28,28 +28,22 @@
             <li><a href="catalogo"  rel="next">Catalogo</a></li>
         </ul>
     </menu>
-    <h2 class="titulo__cadastro">Cadastro</h2>
-    <p class="texto__info">Insira aqui suas informações para ter acesso a nossa plataforma</p>
-    <form action="teste" class="formularioCadastro"  method="post" >
-                    <h1 id="UserMensage" th:text="${mensagem}"></h1>
+    <h2 class="titulo__Login">Login</h2>
+    
+    <form action="Login" class="formularioLogin"  method="post" >
+                    <h1 id="UserMensage" th:text="${mensagemLogin}"></h1>
                     
-                    <label for="InputName" class="label">Nome:</label>
-                    <input type="text" placeholder="Your Name" id="InputName" name="InputName" class ="CadastroInput" required>
-                    <br>
+                    
                     <label for="InputNick" class="label">Nickname:</label>
                     <input type="text" placeholder="Your Nickname" id="InputNick" name="InputNick" class="CadastroInput" required>
                     <br>
-                    <label for="InputEmail" class="label">E-mail:</label>
-                    <input type="email" placeholder="Email" id="InputEmail" class="CadastroInput" name="InputEmail"required>
-                    <br>
+                    
                     <label for="InputSenha" class="label">Senha:</label>
                     <input type="password" id="InputSenha" placeholder=" Password" class="CadastroInput" name="InputSenha" required>
                     <br>
-                    <label for="InputSenhaConfirm" class="label">Confirme sua Senha:</label>
-                    <input type="password" id="InputSenhaConfirm" placeholder=" Password Confirm" class="CadastroInput" name="InputSenhaConfirm"required>
-                    <br>
                     
-                <button type="submit" id="BTSalvar" >Salvar</button>
+                    
+                <button type="submit" id="BTEnviar" >Entrar</button>
             </form>
     <footer>
         <p>&copy; Todos os direitos reservados a <strong>Main Gaming Network</strong></p>

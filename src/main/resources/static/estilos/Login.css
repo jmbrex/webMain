@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+body{
+     background-color: #59687D;
+     font-family: 'Roboto', sans-serif;
+     
+}
+
+.titulo__Login{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #8FA8C9; 
+}
+
+.texto__info{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.formularioLogin{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22%;
+    
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 25%;
+    margin-top: 2%;
+    padding: 1%;
+    
+}
+.label{
+    color:  #ffffff;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.CadastroInput{
+    min-width: 20%;
+    min-height: 25px;
+}
+
+#BTEnviar{
+    text-align: center;
+    width: 25%;
+    height: 10%;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+#BTEnviar:hover{
+    transition: 300ms;
+    
+    scale: 1.2;
+    color: #ffffff;
+    background-color:#8FA8C9; 
+    border-color: #ffffff;
+}

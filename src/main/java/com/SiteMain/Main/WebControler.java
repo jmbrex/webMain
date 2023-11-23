@@ -22,8 +22,13 @@ public class WebControler {
     }
     
     @RequestMapping("/cadastro")
-    public String login(Model modelo){
+    public String cadastro(Model modelo){
         return "cadastro";
+    }
+    
+    @RequestMapping("/Login")
+    public String login(Model modelo){
+        return "Login";
     }
     
     @RequestMapping("/catalogo")
@@ -48,7 +53,6 @@ public class WebControler {
     
     @RequestMapping("/contato")
     public String contato(Model modelo){
-        System.out.println("Chamando o metodo SayHello");
         return "contato";
     }
     
@@ -73,5 +77,27 @@ public class WebControler {
                 modelo.addAttribute("mensagem", "Cadastro Realizado: "+ U1.getNickName());
             }
         return "login";
+    }
+    
+    @RequestMapping(value = "Login", method = RequestMethod.POST)
+    public String Login(Model modelo,String InputNick, String InputSenha){
+            //Instanciando objetos para realização dos metodos
+            Doc doc = new Doc();
+            DbMongoDB mongo = new DbMongoDB();
+            DbSQL SQL = new DbSQL();
+            //Instanciando objetos da classe usuario 
+            //U2 usuario para validação de  nome e senha
+            
+            User U2 = SQL.sqlUserSelectNickName(InputNick);
+            
+            //Verificando a existencia de um usuario com o mesmo Nickname
+            if(U2.getSenha().equals(InputSenha)){
+                 
+                 return "catalogo";
+            }else{
+                modelo.addAttribute("mensagemLogin", "Usuario ou Senha Incorretos");
+                return "login";
+            }
+        
     }
 }
